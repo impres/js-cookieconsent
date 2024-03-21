@@ -1,0 +1,38 @@
+@import "variables"; 
+@import "sass-mq";
+@import "mixins";
+@import "message";
+
+.cookieconsent {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: arial;
+    color: #000;
+
+    @import "checkbox";
+    @import "popup";
+    @import "cookiebar";
+    @import "button";
+
+    .cookieconsent__icon {
+        &.cookieconsent__icon--arrow-down {
+            &:before {
+                content: url(../icons/arrow-down.svg);
+            }
+        }
+
+        &.cookieconsent__icon--arrow-right {
+            &:before {
+                content: url(../icons/arrow-right.svg);
+            }
+        }
+    }
+
+    * {
+        box-sizing: inherit;
+    }
+
+    .cookieconsent__textbold {
+        font-weight: bold;
+    }
+}
