@@ -54,7 +54,7 @@
             bottom: 0;
             background-color: #D90A0A;
             border-radius: 3px;
-            @include default-transition
+            @include default-transition;
 
             &:before {
                 position: absolute;
@@ -65,7 +65,7 @@
                 bottom: 3px;
                 background-color: #FFFFFF;
                 border-radius: 3px;
-                @include default-transition
+                @include default-transition;
             }
         }
 
